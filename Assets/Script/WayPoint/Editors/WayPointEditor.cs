@@ -41,6 +41,7 @@ public class WayPointEditor : EditorWindow
 
 					SphereCollider coll = node.GetComponent<SphereCollider>();
 					coll.radius = 0.05f;
+					coll.isTrigger = true;
 
 					if(0 < Parent.transform.childCount)
 					{
